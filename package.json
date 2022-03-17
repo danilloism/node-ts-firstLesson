@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start": "nodemon build/index.js",
-    "build": "tsc -w"
+    "watch": "tsc -w",
+    "build": "tsc -p ./"
   }
 }
