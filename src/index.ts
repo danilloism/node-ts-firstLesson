@@ -1,5 +1,5 @@
 const express = require('express');
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 
 let mensagemDoDia = require('./mensagemDoDia');
 
