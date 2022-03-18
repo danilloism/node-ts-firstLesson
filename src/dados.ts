@@ -1,4 +1,4 @@
-const frases = [
+export const frases: Array<string> = [
   'A persistência é o caminho do êxito.',
   'A maior de todas as torres começa no solo.',
   'Siga os bons e aprenda com eles.',
@@ -31,5 +31,3 @@ const frases = [
   'Tenho paciência e penso: todo o mal traz consigo algum bem.',
   'O destino não é uma questão de sorte, é uma questão de escolha. Não é algo a se esperar, é algo a se conquistar.',
 ];
-
-exports.frases = frases;
