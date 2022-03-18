@@ -1,4 +1,6 @@
-import express = require('express');
+const express = require('express');
+import { Request, Response } from 'express';
+
 let mensagemDoDia = require('./mensagemDoDia');
 
 const app = express();
@@ -9,7 +11,7 @@ const dia = data.getDate();
 
 const mensagem: string = mensagemDoDia.retornarMensagemDoDia(dia);
 
-app.get('/', (req: express.Request, res: express.Response) => {
+app.get('/', (req: Request, res: Response) => {
   return res.json({ mensagem: mensagem });
 });
 
